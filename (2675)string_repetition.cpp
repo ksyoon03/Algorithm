@@ -3,7 +3,7 @@
 #include <vector>;
 using namespace std;
 
-string repetition(char S, int R) {
+string repeat(char S, int R) {
 	string result = "";
 	for (int i = 0; i < R; i++) {
 		result += S;
@@ -21,8 +21,9 @@ int main() {
 		res[i] = "";
 		cin >> R >> S;
 		for (int j = 0; j < S.length(); j++) {
-			res[i] += repetition(S[j], R);
+			res[i] += repeat(S[j], R);
 		}
 		cout << res[i] << endl;
 	}
+
 }
