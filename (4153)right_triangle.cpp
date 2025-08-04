@@ -1,39 +1,19 @@
 #include <iostream>
+#include <vector>
 #include <algorithm>
 using namespace std;
 
 int main() {
-	int a, b, c;
-	for (int i = 0; i < 30000; i++) {
-		cin >> a >> b >> c;
+	vector <int> s(3);
+	while (true) {
+		cin >> s[0] >> s[1] >> s[2];
+		if (s[0] == 0 && s[1] == 0 && s[2] == 0) return 0;
 
-		if (a == 0 && b == 0 && c == 0) break;
+		sort(s.begin(), s.end());
 
-		int longest = max({ a, b, c });
+		int a = s[0], b = s[1], c = s[2];
 
-		if (longest == a) {
-			if (b * b + c * c == a * a) {
-				cout << "right" << endl;
-			}
-			else if (b * b + c * c != a * a) {
-				cout << "wrong" << endl;
-			}
-		}
-		else if (longest == b) {
-			if (a * a + c * c == b * b) {
-				cout << "right" << endl;
-			}
-			else if (a * a + c * c != b * b) {
-				cout << "wrong" << endl;
-			}
-		}
-		else if (longest == c) {
-			if (a * a + b * b == c * c) {
-				cout << "right" << endl;
-			}
-			else if (a * a + b * b != c * c) {
-				cout << "wrong" << endl;
-			}
-		}
+		if (a * a + b * b == c * c) cout << "right" << endl;
+		else cout << "wrong" << endl;
 	}
 }
