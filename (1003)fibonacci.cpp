@@ -1,33 +1,27 @@
 #include <iostream>
+#include <vector>
+#include <utility>
 using namespace std;
 
-int zero_count[41];
-int one_count[41];
-
-void count() {
-    zero_count[0] = 1;
-    one_count[0] = 0;
-
-    zero_count[1] = 0;
-    one_count[1] = 1;
-
-    for (int i = 2; i < 41; i++) {
-        zero_count[i] = zero_count[i - 1] + zero_count[i - 2];
-        one_count[i] = one_count[i - 1] + one_count[i - 2];
-    }
-}
-
 int main() {
-    int t;
-    cin >> t;
-    count();
+	int t;
+	cin >> t;
 
-    int* n = new int[t];
-    for (int i = 0; i < t; i++) {
-        cin >> n[i];
-    }
+	vector <pair <int, int>> dp(41);
+	// n의 크기는 40 이하
+	// { 0의 개수, 1의 개수 }
 
-    for (int i = 0; i < t; i++) {
-        cout << zero_count[n[i]] << " " << one_count[n[i]] << endl;
-    }
+	dp[0] = { 1, 0 };		// 0번째 수열
+	dp[1] = { 0, 1 };		// 1번째 수열
+
+	for (int i = 2; i <= 40; i++) {
+		dp[i].first = dp[i - 1].first + dp[i - 2].first;		// i번째 수열에서 0의 개수
+		dp[i].second = dp[i - 1].second + dp[i - 2].second;	// i번째 수열에서 1의 개수
+	}
+
+	int n;
+	for (int i = 0; i < t; i++) {
+		cin >> n;
+		cout << dp[n].first << " " << dp[n].second << endl;	// n번째 수열의 0의 개수와 1의 개수 출력
+	}
 }
