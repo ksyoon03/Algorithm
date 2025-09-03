@@ -1,17 +1,17 @@
 #include <iostream>
 #include <queue>
 #include <vector>
-#include <functional> // ¿ì¼±¼øÀ§ Å¥¸¦ »ç¿ëÇÏ±â À§ÇÑ Çì´õÆÄÀÏ
+#include <functional> // ìš°ì„ ìˆœìœ„ íë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•œ í—¤ë”íŒŒì¼
 using namespace std;
 
 int main() {
-	std::ios_base::sync_with_stdio(false);
-	std::cin.tie(NULL);
-	std::cout.tie(NULL);
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
 
 	int n;
 	priority_queue <int, vector <int>, greater <int>> q;
-	// ¿ì¼±¼øÀ§ Å¥
+	// ìš°ì„ ìˆœìœ„ í
 	cin >> n;
 
 	while (n--) {
@@ -25,7 +25,7 @@ int main() {
 			}
 			else {
 				cout << q.top() << '\n';
-				// ¿ì¼±¼øÀ§ Å¥¿¡¼­´Â .front()°¡ ¾Æ´Ñ .top() ÇÔ¼ö¸¦ ¾´´Ù.
+				// ìš°ì„ ìˆœìœ„ íì—ì„œëŠ” .front()ê°€ ì•„ë‹Œ .top() í•¨ìˆ˜ë¥¼ ì“´ë‹¤.
 				q.pop();
 			}
 		}
@@ -33,4 +33,5 @@ int main() {
 			q.push(x);
 		}
 	}
+
 }
