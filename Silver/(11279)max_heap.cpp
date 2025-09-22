@@ -10,7 +10,7 @@ int main() {
 	cout.tie(NULL);
 
 	int n;
-	priority_queue <int> q;	// �켱���� ť
+	priority_queue <int> q;	// ¿ì¼±¼øÀ§ Å¥
 	cin >> n;
 
 	while (n-- > 0) {
