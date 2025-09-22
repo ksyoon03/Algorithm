@@ -4,8 +4,8 @@
 using namespace std;
 
 int main() {
-	int n;		// µèÀâ
-	int m;	// º¸Àâ
+	int n;		// ÂµÃ¨Ã€Ã¢
+	int m;	// ÂºÂ¸Ã€Ã¢
 	cin >> n >> m;
 	
 	vector <string> v(n);
