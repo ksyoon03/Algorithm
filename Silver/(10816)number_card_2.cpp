@@ -10,7 +10,7 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		cin >> a[i];
 	}
-	sort(a.begin(), a.end());		// equal_range()¸¦ »ç¿ëÇÏ±â À§ÇØ ¿À¸§Â÷¼øÀ¸·Î Á¤·ÄÇÑ´Ù.
+	sort(a.begin(), a.end());		// equal_range()ë¥¼ ì‚¬ìš©í•˜ê¸° ìœ„í•´ ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•œë‹¤.
 
 	cin >> m;
 	vector <int> b(m);
@@ -21,10 +21,10 @@ int main() {
 	for (int i = 0; i < m; i++) {
 		auto cnt = equal_range(a.begin(), a.end(), b[i]);
 		// equal_range = pair<lower_bound, upper_bound>
-		// cnt.first = b[i] º¸´Ù Å©°Å³ª °°Àº Ã¹ ¹øÂ° ¿ä¼ÒÀÇ ÀÌÅÍ·¹ÀÌÅÍ
-		// cnt.second = b[i] º¸´Ù Å« Ã¹ ¹øÂ° ¿ä¼ÒÀÇ ÀÌÅÍ·¹ÀÌÅÍ
+		// cnt.first = b[i] ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ì€ ì²« ë²ˆì§¸ ìš”ì†Œì˜ ì´í„°ë ˆì´í„°
+		// cnt.second = b[i] ë³´ë‹¤ í° ì²« ë²ˆì§¸ ìš”ì†Œì˜ ì´í„°ë ˆì´í„°
 
 		cout << distance(cnt.first, cnt.second) << " ";
-		// pair<> ÇüÅÂ¸¦ »ç¿ëÇÏ±â ¶§¹®¿¡ .first¿Í .second¸¦ »ç¿ëÇØ Ãâ·ÂÇÑ´Ù.
+		// pair<> í˜•íƒœë¥¼ ì‚¬ìš©í•˜ê¸° ë•Œë¬¸ì— .firstì™€ .secondë¥¼ ì‚¬ìš©í•´ ì¶œë ¥í•œë‹¤.
 	}
 }
