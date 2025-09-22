@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	int N, M;	// N : Ä«µåÀÇ °³¼ö, M : ±âÁØ ¼ýÀÚ
+	int N, M;	// N : Ã„Â«ÂµÃ¥Ã€Ã‡ Â°Â³Â¼Ã¶, M : Â±Ã¢ÃÃ˜ Â¼Ã½Ã€Ãš
 	cin >> N >> M;
 	vector <int> cards(N);
 
