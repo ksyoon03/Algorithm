@@ -141,12 +141,12 @@ int main() {
 
 - 집합에 3을 추가할 때 → **3번째 비트를 1로 바꾸는 것과 같음**
     
-    ![image.png](image.png)
+    <img width="344" height="141" alt="Image" src="https://github.com/user-attachments/assets/d74ac74c-0fb1-4481-a924-1552cddaf0be" />
     
 
 - 집합에서 3을 제거할 때 → **3번째 비트를 0으로 바꾸는 것과 같음**
 
-![image.png](image%201.png)
+<img width="253" height="140" alt="Image" src="https://github.com/user-attachments/assets/4d21ab46-091f-467e-be55-3bfd3b825533" />
 
 </aside>
 
