@@ -5,9 +5,9 @@ using namespace std;
 
 bool custom(const string a, const string b) {
 	if (a.length() == b.length()) {
-		return a < b;			// »çÀü¼øÀ¸·Î Á¤·Ä
+		return a < b;			// ì‚¬ì „ìˆœìœ¼ë¡œ ì •ë ¬
 	}
-	return a.length() < b.length();		// ±æÀÌ ¼øÀ¸·Î Á¤·Ä
+	return a.length() < b.length();		// ê¸¸ì´ ìˆœìœ¼ë¡œ ì •ë ¬
 }
 
 int main() {
