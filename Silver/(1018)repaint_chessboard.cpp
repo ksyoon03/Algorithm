@@ -5,8 +5,8 @@
 using namespace std;
 
 int m, n;
-// m : Çà
-// n : ¿­
+// m : í–‰
+// n : ì—´
 vector <string> board;
 
 string WB[8] = {
@@ -52,8 +52,8 @@ int BW_count(int start_i, int start_j) {
 }
 
 int main() {
-	ios_base::sync_with_stdio(false); // C¿Í C++ÀÇ Ç¥ÁØ ½ºÆ®¸² °£ÀÇ µ¿±âÈ­¸¦ ÇØÁ¦ÇÏ¿© ¼Óµµ Çâ»ó
-	cin.tie(NULL); // cin°ú cout °£ÀÇ ¿¬°áÀ» ²÷¾î ¼Óµµ Çâ»ó
+	ios_base::sync_with_stdio(false); // Cì™€ C++ì˜ í‘œì¤€ ìŠ¤íŠ¸ë¦¼ ê°„ì˜ ë™ê¸°í™”ë¥¼ í•´ì œí•˜ì—¬ ì†ë„ í–¥ìƒ
+	cin.tie(NULL); // cinê³¼ cout ê°„ì˜ ì—°ê²°ì„ ëŠì–´ ì†ë„ í–¥ìƒ
 
 	cin >> m >> n;
 
