@@ -4,11 +4,11 @@
 using namespace std;
 
 int main() {
-	int N; // ÇÊ¿äÇÑ ±âÅ¸ÁÙ °³¼ö
-	int M; // ºê·£µå °³¼ö
+	int N; // í•„ìš”í•œ ê¸°íƒ€ì¤„ ê°œìˆ˜
+	int M; // ë¸Œëžœë“œ ê°œìˆ˜
 	cin >> N >> M;
-	vector <int> pack(M); // ÆÐÅ°Áö °¡°Ý
-	vector <int> each(M); // °³º° °¡°Ý
+	vector <int> pack(M); // íŒ¨í‚¤ì§€ ê°€ê²©
+	vector <int> each(M); // ê°œë³„ ê°€ê²©
 
 	int pack_min = 1000;
 	int each_min = 1000;
